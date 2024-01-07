@@ -7,6 +7,10 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+main section {
+  margin: 120px 140px;
+}
+
 /* Header and Hero Section Style */
 
 header {
@@ -44,3 +48,33 @@ header {
 }
 
 /* Offer Section Style */
+.offer-section {
+  text-align: center;
+  font-family: Inter;
+}
+
+.offer-title {
+  color: #f00;
+  font-size: 85px;
+  font-weight: 700;
+}
+
+.offer-section > p {
+  color: #f00;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 50px auto 0;
+}
+
+.offer-subtitle {
+  color: #070211;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+
+.offer-section > img {
+  margin: 50px auto 0;
+}
+
+/* Celebrate section style */
