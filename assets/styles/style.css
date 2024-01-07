@@ -8,3 +8,39 @@
 }
 
 /* Header and Hero Section Style */
+
+header {
+  margin: 50px 140px 120px;
+}
+
+.hero-section {
+  height: 100%;
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url('../images/Banner\ Image.png'), no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 180px 350px;
+  border-radius: 16px;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: Merriweather;
+  font-weight: 700;
+  margin: 170px auto 0;
+  padding: 10px;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  color: #fff;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0px auto 230px;
+  padding: 16px 0;
+}
+
+/* Offer Section Style */
