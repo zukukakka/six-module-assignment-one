@@ -1,3 +1,9 @@
+/* Start of the Portfolio 6 module first assignment */
+
+/* Note here most of attribute using font-family in the section because when I give it global it did not work but when I implement it in as per element it work */
+
+/* I designed as per my monitor size 1920*1080 and tab 100% default */
+
 /* Global Css */
 * {
   margin: 0;
@@ -19,9 +25,10 @@ header {
   margin: 50px 140px 120px;
 }
 
+/* Here directly using background I got it from youtube but Mahbub Sir learn via multiple attribute Consider it to use it */
 .hero-section {
   height: 600px;
-  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url('../images/Banner\ Image.png'), no-repeat;
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url('../images/Banner\ Image.png') no-repeat;
   background-size: 100% 100%;
   text-align: center;
   padding: 180px 350px;
@@ -39,13 +46,13 @@ header {
 }
 
 .hero-subtitle {
-  width: 600px;
+  max-width: 600px;
   color: #fff;
   text-align: center;
   font-family: Merriweather;
   font-size: 70px;
   font-weight: 900;
-  margin: 0px auto 230px;
+  margin: 0px auto;
   padding: 16px 0;
 }
 
@@ -80,9 +87,11 @@ header {
 }
 
 /* Celebrate section style */
+/* Here directly using background value initiate of multiple single value*/
+
 .celebrate-section {
-  height: 600px;
-  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url(../images/Vectorrr.png), no-repeat;
+  max-height: 600px;
+  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%), url(../images/Vectorrr.png) no-repeat;
   background-size: 100% 100%;
   border-radius: 15px;
   display: flex;
@@ -92,15 +101,15 @@ header {
 }
 
 .celebrate-info {
-  width: 650px;
+  max-width: 650px;
 }
 
 .celebrate-title {
   color: #fff;
   font-size: 64px;
   font-weight: 900;
-  line-height: 88px;
-  letter-spacing: 7.04px;
+  line-height: 90px;
+  letter-spacing: 8px;
 }
 
 .celebrate-description {
@@ -110,6 +119,7 @@ header {
   font-style: normal;
   font-weight: 400;
   margin-top: 25px;
+  line-height: 30px;
 }
 
 .celebrate-btn {
@@ -165,6 +175,7 @@ h5 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 /* Coming New year section style */
 .coming-soon-section {
   background: #fff;
@@ -185,7 +196,6 @@ h5 {
 }
 .new-offer-section h4 {
   color: #070211;
-
   font-size: 48px;
   font-weight: 900;
   text-transform: capitalize;
@@ -217,12 +227,9 @@ h5 {
 
 .coming-new-year h3 {
   color: #f00;
-
   font-family: Inter;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .coming-new-year p {
@@ -232,3 +239,244 @@ h5 {
   font-size: 20px;
   line-height: 30px;
 }
+
+/* New sale section style */
+/* Here using fixed content as per class guideline I try to use only preset module related attribute and value
+But We can make it alternative way that I get the information from youtube. So that the section need to consider
+*/
+.new-sale-section {
+  text-align: center;
+}
+
+.new-sale-title {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+}
+.new-sale-subtitle {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.new-sale-subtitle span {
+  color: #f00;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.new-sale-description {
+  width: 1000px;
+  margin: 30px auto;
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.new-sale-img {
+  position: relative;
+}
+
+.discount-image-two,
+.discount-image-three {
+  position: relative;
+}
+
+.discount-image-three {
+  left: 290px;
+  top: 4px;
+}
+
+/* Here using minus value to fixed the image and using z-index for showing as per figma file*/
+
+.discount-image-one {
+  position: absolute;
+  margin-left: -650px;
+  z-index: 1;
+}
+
+.discount-image-two {
+  left: 400px;
+  z-index: 1;
+}
+
+/* Here using width vw in width */
+.price-discount {
+  height: 200px;
+  width: 80vw;
+  border-radius: 16px 0px 16px 16px;
+  background: #f00;
+}
+
+/* Portfolio Section Style */
+.portfolio-section {
+  max-width: 100vw;
+  text-align: left;
+}
+.portfolio-section h3 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.portfolio-section h4 {
+  margin-top: 20px;
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.portfolio-section p {
+  max-width: 850px;
+  margin-top: 20px;
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 32px;
+}
+.portfolio-img {
+  margin-top: 30px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+/* For hover effect I need to apply more value but our module is not coming about animation or other related effect */
+.portfolio-img img:hover {
+  border-radius: 50%;
+  opacity: 0.5;
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Subscribe section style */
+.subscribe-section {
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.05);
+  height: 616px;
+  text-align: center;
+}
+
+.subscribe-content {
+  padding: 100px 350px;
+  min-width: 850px;
+}
+
+.subscribe-section h3 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.subscribe-section p {
+  margin-top: 25px;
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.subscribe-section input {
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 50px 0px 0 50px;
+  background: #fff;
+  color: rgba(7, 2, 17, 0.3);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  padding: 30px 20px;
+}
+
+.subscribe-section button {
+  border: none;
+  border-radius: 0px 50px 50px 0px;
+  background: #f00;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 30px 50px;
+  margin-left: -5px;
+  margin-top: 35px;
+}
+
+/* Footer Style */
+footer {
+  height: 300px;
+  padding: 120px 140px;
+  background: #070211;
+}
+
+/* Here using span tag initiate of hr tag. When using it I can not change the background */
+.horizontal-line {
+  margin: 50px auto;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-header p {
+  max-width: 370px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer-contact {
+  display: block;
+  margin-right: 100px;
+}
+.footer-contact div {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.footer-contact img {
+  position: relative;
+  margin: 0px 10px -6px;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* End of the Portfolio 6 module first assignment */
