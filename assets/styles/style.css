@@ -248,6 +248,42 @@ But We can make it alternative way that I get the information from youtube. So t
   text-align: center;
 }
 
+.bg-one {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bg-one div {
+  display: flex;
+  /* width: 1300px; */
+}
+
+.discount-image-one {
+  position: relative;
+  top: 300px;
+}
+
+.discount-image-two {
+  position: relative;
+  right: 250px;
+  top: 260px;
+  height: 300px;
+  width: 300px;
+}
+
+.discount-image-three {
+  width: 600px;
+  margin-left: -400px;
+}
+
+.discount-section {
+  height: 300px;
+  width: 100%;
+  border-radius: 16px 0px 16px 16px;
+  background: #f00;
+}
+
 .new-sale-title {
   color: #070211;
   font-family: Inter;
@@ -274,32 +310,6 @@ But We can make it alternative way that I get the information from youtube. So t
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
-}
-.new-sale-img {
-  position: relative;
-}
-
-.discount-image-two,
-.discount-image-three {
-  position: relative;
-}
-
-.discount-image-three {
-  left: 290px;
-  top: 4px;
-}
-
-/* Here using minus value to fixed the image and using z-index for showing as per figma file*/
-
-.discount-image-one {
-  position: absolute;
-  margin-left: -650px;
-  z-index: 1;
-}
-
-.discount-image-two {
-  left: 400px;
-  z-index: 1;
 }
 
 /* Here using width vw in width */
@@ -364,8 +374,12 @@ But We can make it alternative way that I get the information from youtube. So t
 }
 
 .subscribe-content {
-  padding: 100px 350px;
   min-width: 850px;
+  max-width: 100%;
+}
+
+.subscribe-content img {
+  padding: 80px 0 0;
 }
 
 .subscribe-section h3 {
@@ -377,6 +391,8 @@ But We can make it alternative way that I get the information from youtube. So t
 }
 
 .subscribe-section p {
+  margin: 30px auto 0;
+  width: 880px;
   margin-top: 25px;
   color: rgba(7, 2, 17, 0.6);
   font-family: Inter;
