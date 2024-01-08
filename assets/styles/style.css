@@ -357,12 +357,15 @@ But We can make it alternative way that I get the information from youtube. So t
   align-items: center;
   gap: 20px;
 }
+.portfolio-img img {
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
 /* For hover effect I need to apply more value but our module is not coming about animation or other related effect */
 .portfolio-img img:hover {
   border-radius: 50%;
   opacity: 0.5;
-  height: fit-content;
-  width: fit-content;
 }
 
 /* Subscribe section style */
